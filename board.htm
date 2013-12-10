@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="all" />
+<meta name="description" content="UIweek——完全免费的UI鉴赏每月一刊为您呈上" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>UIweek</title>
+<link href="./css/style.css" rel="stylesheet" />
+<link href="./css/board.css" rel="stylesheet" />
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/placeholder.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<div class="nav">
+		<div class="logo"></div>
+        <ul>
+        	<li><a href="#">概览</a></li>
+        	<li><a href="#">助手</a></li>
+        	<li><a href="#">合作</a></li>
+        	<li><a href="#">关于</a></li>
+        	<li><a href="#">留言板</a></li>
+        </ul>
+	</div>
+    <div class="contain">
+        <div class="board">
+			<form onsubmit="return UIWeek.commit('board');">
+				<textarea id="mtext" name="mtext" maxlength="300" placeholder="请填写您对我们的宝贵留言"></textarea>
+				<input class="no-bg" id="mnick" name="mnick" maxlength="20" type="text" placeholder="您的昵称"/>
+				<input class="no-bg" id="mmail" name="mmail" type="text" maxlength="50" placeholder="您的邮箱（审核通过邮件通知）" />
+				<input id="submit" type="submit" value="提交" class="btn-submit" />
+			</form>
+        </div>
+	</div>
+    <div class="contain">
+        <div class="search">
+			<form>
+				<input type="text" class="search-input" maxlength="30" id="search" name="s" value="" placeholder="搜索留言" />
+				<input type="submit" class="search-go" style="display:none" value="" />
+				<input type="button" class="search-clear" onclick="location.search=''" value="" />
+			</form>
+			<div class="pages">
+				<a class="prev-page" href="#">&nbsp;&nbsp;&nbsp;</a>
+				<a class="active" href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a class="next-page" href="#">&nbsp;&nbsp;&nbsp;</a>
+			</div>
+        </div>
+	</div>
+	<div class="contain bg-top">
+		<div class="title">
+			<h2>粢饭大人</h2>
+			<a class="go-top" href="#" title="返回顶部">返回顶部</a>
+			<span>2013-05-10 01:36</span>
+		</div>
+        <div class="bg-body">留言留言</div>
+		<div class="hr"></div>
+        <div class="bg-body">
+			<p><strong>1: </strong>123</p>
+			<p><strong>2: </strong>123</p>
+			<p><strong>3: </strong>123</p>
+			<p><strong>4: </strong>123</p>
+		</div>
+		<div class="bg-body pages" style="display:none">
+			<a class="prev-page" href="#">&nbsp;&nbsp;&nbsp;</a>
+			<a class="active" href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a class="next-page" href="#">&nbsp;&nbsp;&nbsp;</a>
+		</div>
+        <div class="bg-body reply">
+			<form>
+				<input type="text" class="reply-nick" placeholder="您的昵称" />
+				<input type="text" class="reply-input" placeholder="邮箱地址" />
+				<input type="submit" class="reply-submit" value="" />
+			</form>
+		</div>
+		<div class="bg-bottom"></div>
+	</div>
+	<div class="contain bg-top">
+		<div class="title">
+			<h2>粢饭大人</h2>
+			<a class="go-top" href="#" title="返回顶部">返回顶部</a>
+			<span>2013-05-10 01:36</span>
+		</div>
+        <div class="bg-body">留言留言</div>
+		<!--<div class="hr"></div>
+        <div class="bg-body">123</div>-->
+		<div class="bg-bottom"></div>
+	</div>
+	<div class="contain bg-top">
+		<div class="title">
+			<h2>粢饭大人</h2>
+			<a class="go-top" href="#" title="返回顶部">返回顶部</a>
+			<span>2013-05-10 01:36</span>
+		</div>
+        <div class="bg-body">留言留言</div>
+		<!--<div class="hr"></div>
+        <div class="bg-body">123</div>-->
+		<div class="bg-bottom"></div>
+	</div>
+	<div class="contain">
+		<div class="pages">
+			<a class="prev-page" href="#">&nbsp;&nbsp;&nbsp;</a>
+			<a class="active" href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a class="next-page" href="#">&nbsp;&nbsp;&nbsp;</a>
+		</div>
+	</div>
+	<div class="footer">
+        <div class="links">
+        	<a href="#" title="iconfun"><img src="./img/iconfans.png"></a>
+        	<a href="#" title="UIF"><img src="./img/uif.png"></a>
+        	<a href="#" title="3E"><img src="./img/3e.png"></a>
+        </div>
+    	<div class="barcode">
+	    	<p><img alt="扫描二维码" src="./img/barcode.jpg" /></p>
+    	    <p>关注UIweek公众账号<br />使用微信扫描一下，<br />或者找微信号uiweek</p>
+        </div>
+        <div class="clear"></div>
+	</div>
+	<div class="pop-ok" style="display:none">
+		<a class="close" href="#" title="关闭">&nbsp;&nbsp;</a>
+		<p>留言提交成功，我们会在24小时内进行审核，通过后将发邮件通知您</p>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="./js/uiweek.js"></script>

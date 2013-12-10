@@ -1,0 +1,248 @@
+body{
+	height:auto;
+}
+.board{
+	background:#eee url(../img/board-bg.png) no-repeat center top;
+	height:322px;
+	margin-top:30px;
+	padding-top:5px;
+}
+.no-bg{
+	background:none !important;
+}
+.nav ul{
+	text-align:right;
+	width:345px;
+	float:right;
+	margin-top:8px;
+}
+.board form input{
+	border:none;
+	width:350px;
+	height:40px;
+	_height:10px;
+	overflow:hidden;
+	outline:none;
+	padding:0 15px;
+	_padding:15px 15px;
+	/*float:left;*/
+	margin-bottom:10px;
+}
+.board form textarea{
+	display:block;
+	padding:0;
+	width:350px;
+	height:80px;
+	overflow:hidden;
+	border:0px solid #fff;
+	background-color:transparent;
+	resize:none;
+	outline:none;
+	padding:19px 15px;
+}
+#mtext{
+	margin-left:30px;
+	margin-top:30px;
+	width:768px;
+	height:140px;
+}
+#mnick{
+	float:left;
+	margin-top:10px;
+	margin-left:30px;
+	width:118px;
+	height:45px;
+}
+#mmail{
+	float:left;
+	margin-top:10px;
+	margin-left:9px;
+	width:269px;
+	height:45px;
+}
+#submit{
+	position:inherit;
+	float:right;
+	margin-top:22px;
+	margin-right:30px;
+}
+.bg-top{
+	background:#eee url(../img/top.png) no-repeat center top;
+}
+.bg-body{
+	background:#eee url(../img/line.png) repeat-y center top;
+	font-size:16px;
+	text-align:left;
+	padding:16px 46px;
+}
+.bg-body p{
+	font-size:12px;
+	color:#535353;
+}
+.bg-bottom{
+	background:#eee url(../img/bottom.png) repeat-y center bottom;
+	height:10px;
+}
+.bg-top .title{
+	width:825px;
+	margin:0 auto;
+	height:40px;
+}
+.bg-top .title h2{
+	float:left;
+	width:200px;
+}
+.bg-top .title span{
+	float:right;
+	font-size:12px;
+	color:#a0a0a0;
+	margin-right:7px;
+	margin-top:17px;
+}
+.bg-top .title .go-top{
+	position:inherit;
+	float:right;
+	width:23px;
+	height:23px;
+	background:#eee url(../img/go-top-white.png) no-repeat center center;
+	margin-top:10px;
+	margin-right:-8px;
+}
+.bg-top .title .go-top:hover{
+	background-image:url(../img/go-top-white-hover.png);
+}
+.pages{
+	text-align:center;
+	
+}
+.pages a{
+	font-size:14px;
+	color:#a0a0a0;
+	text-decoration:none;
+	padding:5px;
+}
+.pages a:hover{
+	color:#555;
+}
+.pages a b{
+	color:#ce5656;
+}
+.pages .prev-page{
+	background:url(../img/page-left.png) no-repeat center center;
+}
+.pages .next-page{
+	background:url(../img/page-right.png) no-repeat center center;
+}
+.pages .prev-page:hover{
+	background-image:url(../img/page-left-hover.png);
+}
+.pages .next-page:hover{
+	background-image:url(../img/page-right-hover.png);
+}
+.footer{
+	padding-top:10px;
+}
+.search{
+	/*background:url(../img/search.png) no-repeat left center;*/
+	height:40px;
+}
+.search form{
+	float:left;
+}
+.search .search-input{
+	border:none;
+	width:480px;
+	height:40px;
+	_height:10px;
+	overflow:hidden;
+	outline:none;
+	padding:0 38px;
+	_padding:38px 38px;
+	/*float:left;*/
+	margin-bottom:10px;
+	background:url(../img/search.png) no-repeat left center;
+}
+.reply{
+	padding:16px 20px;
+}
+.reply .reply-nick{
+	border:none;
+	height:40px;
+	width:120px;
+	padding:0 15px;
+	outline:none;
+	background:url(../img/reply-nick.png) no-repeat left center;
+}
+.reply .reply-input{
+	border:none;
+	height:40px;
+	width:510px;
+	padding:0 15px;
+	outline:none;
+	background:url(../img/reply-input.png) no-repeat left center;
+}
+.reply .reply-submit{
+	float:right;
+	border:none;
+	background:url(../img/reply.png) no-repeat top center;
+	width:110px;
+	height:40px;
+	cursor:pointer;
+}
+.reply .reply-submit:hover{
+	float:right;
+	border:none;
+	background-position:bottom center !important;
+	width:110px;
+	height:40px;
+	cursor:pointer;
+}
+.search .pages{
+	margin-top:9px;
+	float:right;
+}
+.search .search-go{
+	position:absolute;
+	top:0px;
+	left:460px;
+	border:none;
+	background:url(../img/go-search.png) no-repeat left center;
+	width:25px;
+	height:40px;
+	cursor:pointer;
+}
+.search .search-clear{
+	position:absolute;
+	top:0px;
+	left:460px;
+	border:none;
+	background:url(../img/search-clear.png) no-repeat right center;
+	width:25px;
+	height:40px;
+	cursor:pointer;
+}
+.search .search-go:hover{
+	background:url(../img/go-search-hover.png) no-repeat left center;
+}
+.pop-ok{
+	background:url(../img/pop-ok.png) no-repeat center center;
+	width:100%;
+	height:229px;
+	position:absolute;
+	top:128px;
+	left:0;
+	padding-top:5px;
+}
+.pop-ok .close{
+	width:15px;
+	height:15px;
+	overflow:hidden;
+	background:url(../img/close.jpg) no-repeat top center;
+	margin-left:460px;
+	text-decoration:none;
+}
+.pop-ok p{
+	margin-top:115px;
+	font-size:12px;
+	color:#a0a0a0;
+}
